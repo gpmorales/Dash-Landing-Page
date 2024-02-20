@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Colfax";
+  src: local("Colfax"), url("/public/fonts/Colfax.otf") format("truetype");
+  font-weight: 400;
+}
+
+#slogans-container {
+  transform: translateX(-425px) translateY(-65px);
+  display: flex;
+  justify-content: center; /* Center the slogans horizontally */
+  align-items: center; /* Center the slogans vertically */
+}
+
+#slogan-1,
+#slogan-2 {
+  transform: translateX(45px) translateY(35px); /* distacne between title and desc */
+  margin: 130px 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#slogan-1 > .basic_text {
+  font-family: "Colfax";
+  font-size: 100px;
+  color: white;
+}
+
+#slogan-2 > .basic_text {
+  font-family: "Colfax";
+  font-size: 115px;
+  color: rgba(82, 24, 146);
+}
+
+/* VIDEO */
+video {
+  object-fit: cover;
+  width: 1395px;
+  overflow: hidden;
+  height: 140%;
+  transform: rotate(-90deg) translateY(280px);
+  position: fixed;
+  z-index: 0;
+}
+
+/* COMB CONTAINER */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BUTTON SIGN UP / ABOUT */
+.hero-btns {
+  display: flex;
+  gap: 50px;
+  margin-top: 120px;
+  margin-right: 1040px;
+}
+
+.black-rectangle {
+  position: absolute;
+  width: 780px;
+  height: 699px;
+  background-color: black;
+  left: 0;
+  z-index: -1;
+}
+
+#dynamic-text {
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+}
+
+#description {
+  display: flex;
+  margin-left: -795px;
+  margin-top: -25px;
+  flex-direction: column;
+  color: white;
+  z-index: 999;
+}
+
+#description > #basic_text {
+  font-family: "Colfax";
+  font-size: 35px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+}
+
+.dynamic-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(60, end) infinite;
+  color: rgba(82, 24, 146);
+  font-family: "Colfax";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-family: "Colfax";
+  color: rgb(240, 234, 240);
+  margin-left: -1520px;
+  margin-top: 15px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  font-family: "Colfax";
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  flex-direction: row; /* This is not needed for the nav-item but for the container */
+  margin: 0 30px; /* Add some space between the nav-items */
+  margin-top: -50px;
+  transform: translateX(50px);
+}
+
+.nav-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
